@@ -19,7 +19,7 @@ export const PAGES = [
     id: "web-application",
     title: "Aplicação Web",
     description:
-      "Site com autorização e autentincação, sistema de cadastro e login, envio automatizado de email para os clientes. Um exemplo disso seria o Instagram.",
+      "Site com autorização e autenticação, sistema de cadastro e login, envio automatizado de email para os clientes. Um exemplo disso seria o Instagram.",
     price: 2000,
   },
 ];
