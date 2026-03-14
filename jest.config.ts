@@ -1,5 +1,5 @@
 /** @type {import("jest").Config} */
-import type { Config } from "jest"
+import type { Config } from "jest";
 const config: Config = {
   testEnvironment: "node",
   roots: ["<rootDir>/__tests__"],
@@ -17,6 +17,6 @@ const config: Config = {
   coverageReporters: ["text", "lcov"],
   moduleNameMapper: {},
   moduleFileExtensions: ["js", "jsx", "ts", "tsx", "json"],
-  verbose: true
-}
-export default config
+  verbose: true,
+};
+export default config;

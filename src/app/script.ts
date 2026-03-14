@@ -1,26 +1,14 @@
-export type Plan = "start" | "pro" | "elite"
+export type Page = "institutional" | "multi-institutional" | "web-page";
 interface CalculateProps {
-    pages: number;
-    plan: Plan;
-    blog: Boolean;
-    seo: Boolean;
+  quantity: number;
+  page: Page;
 }
 
-const PRICES = {
-    start: 300,
-    pro: 500,
-    elite: 700,
-} as const;
+import { PAGES } from "./components/servicesSection";
 
-export default function calculatePrice({
-    pages,
-    plan,
-    blog = false,
-    seo = false
-}: CalculateProps
-) {
-    let total = pages * PRICES[plan];
-    if (blog) total += 300;
-    if (seo) total += 200;
-    return total;
+export default function calculatePrice({ quantity, page }: CalculateProps) {
+  const selectedPage = PAGES.find((object) => object.id === page);
+  if (!selectedPage) return 0;
+
+  return quantity * selectedPage.price;
 }

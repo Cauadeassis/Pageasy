@@ -7,11 +7,11 @@ const config: UserConfig = {
     { value: "docs", name: "docs:     📚  Documentação" },
     { value: "refactor", name: "refactor: ♻️  Refatoração" },
     { value: "test", name: "test:     🧪  Testes" },
-    { value: "chore", name: "chore:    🔧  Configuração" }
+    { value: "chore", name: "chore:    🔧  Configuração" },
   ],
   scopes: ["auth", "api", "ui", "config"],
   allowCustomScopes: true,
   allowBreakingChanges: ["feat", "fix"],
-  subjectLimit: 100
+  subjectLimit: 100,
 };
-export default config
+export default config;

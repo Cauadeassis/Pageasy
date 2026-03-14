@@ -1,0 +1,55 @@
+@use "../../../styles/mixins.scss";
+
+.servicesSection {
+  padding: 5rem 2rem 2.5rem 2rem;
+  background-color: var(--blue-600);
+  text-align: center;
+
+  & > div {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mixins.mobile {
+      flex-direction: column;
+    }
+
+    & > div {
+      background-color: var(--white);
+      border-radius: var(--radius);
+      padding: 2rem;
+      text-align: left;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border: 1px solid var(--blue-100);
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      & h3 {
+        color: var(--blue-700);
+      }
+
+      & p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  & a {
+    display: inline-block;
+    margin-top: 2.5rem;
+    color: var(--blue-600);
+    background-color: var(--white);
+    padding: 0.75rem 2rem;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
