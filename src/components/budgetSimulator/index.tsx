@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import calculatePrice, { Page } from "../../script";
+import calculatePrice, { Page } from "../../app/script";
 import styles from "./styles.module.scss";
 
 export default function BudgetSimulator() {

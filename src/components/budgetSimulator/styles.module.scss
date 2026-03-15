@@ -1,4 +1,4 @@
-@use "../../../styles/mixins";
+@use "../../styles/mixins";
 
 .budgetSimulator {
   padding: 3rem 2rem;
@@ -12,13 +12,19 @@
   & > div {
     @include mixins.flexColumn;
     gap: 1.25rem;
+    margin: 0 auto;
     margin-top: 2rem;
+    justify-content: center;
     background-color: var(--blue-50);
     border: 1px solid var(--blue-200);
     border-radius: var(--radius);
     padding: 2.5rem 3rem;
-    min-width: 90%;
+    max-width: 50%;
     text-align: left;
+
+    @include mixins.mobile {
+      max-width: 90%;
+    }
 
     & label {
       @include mixins.flexColumn;

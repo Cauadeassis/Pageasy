@@ -4,7 +4,7 @@ interface CalculateProps {
   page: Page;
 }
 
-import { PAGES } from "./components/servicesSection";
+import { PAGES } from "../components/servicesSection";
 
 export default function calculatePrice({ quantity, page }: CalculateProps) {
   const selectedPage = PAGES.find((object) => object.id === page);

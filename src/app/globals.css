@@ -82,7 +82,9 @@ p {
   animation: fadeUp 0.8s 0.15s ease both;
 }
 
-a {
+a,
+.link {
+  cursor: pointer;
   text-decoration: none;
   transition: var(--transition);
   border-radius: var(--radius-sm);
