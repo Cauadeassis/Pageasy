@@ -34,7 +34,7 @@ export default function Home() {
         <section className={styles.hero} id="inicio">
           <h1>Criamos sites profissionais para sua empresa</h1>
           <p>
-            Sites modernos, rápidos e que <b>geram clientes.</b>
+            Páginas modernas, simples e que <b>geram clientes.</b>
           </p>
           <a href="#orcamento">Solicitar orçamento</a>
         </section>
